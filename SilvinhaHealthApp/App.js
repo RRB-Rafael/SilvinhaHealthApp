@@ -7,8 +7,9 @@ export default function App() {
       <View style={styles.tittleContainer}>
         <Text style={styles.tittle}>Silvinha Health App</Text>
         </View>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+        <View style={StyleSheet.formContent}>
+        
+        </View>
     </View>
   );
 }
@@ -16,8 +17,17 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#e0e5e5',
+    paddingTop: 50,
+  },
+  tittleContainer: {
     alignItems: 'center',
     justifyContent: 'center',
+    padding: 10,
   },
+  tittle: {
+    color: "#ff0043",
+    fontSize:28, 
+    fontWeight: 'bold',
+  }
 });
