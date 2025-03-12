@@ -36,7 +36,7 @@ export default function App() {
         onPress={()=>alert("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")}
         >
           <Ionicons name="calculator-sharp" size={24} color="#edf2f4" />
-          <Text style={styles.text}>Calcularr</Text>
+          <Text style={styles.text}>Calcular</Text>
         </TouchableOpacity>
 
      <StatusBar style='light'>
