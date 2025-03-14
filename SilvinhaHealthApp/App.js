@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { SafeAreaView, StyleSheet, Text, View, TextInput, Touchable, TouchableOpacity } from 'react-native';
 import Ionicons from "@expo/vector-icons/Ionicons";
@@ -39,6 +40,11 @@ export default function App() {
           <Text style={styles.text}>Calcular</Text>
         </TouchableOpacity>
 
+        <View style={styles.imcContainer}>
+          <Text style={styles.imcText}>Preencha o peso e a altura</Text>
+          <Text style={styles.imcResult}></Text>
+        </View>
+
      <StatusBar style='light'>
      </StatusBar>
     </SafeAreaView>
@@ -49,7 +55,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#e0e5e5',
-
   },
   titleContainer: {
     alignItems: 'center',
@@ -102,10 +107,23 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   text:{
-    color: '#edf3f4',
+    color: '#edf2f4',
     fontSize: 24,
     fontWeight: 'bold',
     marginLeft: 5,
-    
+  },
+  imcContainer:{
+    flex:1,
+    alignItems:'center',
+    justifyContent: 'center',
+    width:'100%',
+  },
+  imcText:{
+    fontsize:18,
+    color: '#ef233c',
+    fontWeight:'bold',
+  },
+  imcResult:{
+    fontSize:48,
   },
 });
